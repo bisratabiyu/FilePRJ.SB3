@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>TV Show</title>
+</head>
+<body>
+<form action="#" th:action="@{/tvform}" th:object="${tvshowObj}" method="post">
+    Show ID:<input type="text" th:field="*{id}" /><br/>
+    Show Type:<input type="text" th:field="*{type}" /><br/>
+    <input type="submit" name="Submit" />
+</form>
+</body>
+</html>
